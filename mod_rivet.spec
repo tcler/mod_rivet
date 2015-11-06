@@ -36,7 +36,7 @@ generated webpages in Tcl.
 %build
 
 %configure \
-    --with-apxs="%{_sbindir}/apxs"       \
+    --with-apxs="%{_bindir}/apxs"       \
     --with-apache="%{_prefix}"           \
     --with-rivet-target-dir="%{_libdir}/httpd/rivet%{version}"   \
     --with-pic \
