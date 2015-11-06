@@ -13,7 +13,7 @@ Group: Development/Languages
 URL: http://tcl.apache.org/rivet/
 
 Source0: http://www.apache.org/dist/tcl/%{real_name}/%{real_name}-%{version}.tar.gz
-Source1: http://www.apache.org/dist/tcl/%{real_name}/%{real_name}-%{version}.tar.gz.asc
+#Source1: http://www.apache.org/dist/tcl/%{real_name}/%{real_name}-%{version}.tar.gz.asc
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: httpd-devel >= 2.2
@@ -87,6 +87,10 @@ EOT
 
 
 %changelog
+* Fri Nov 6 2015 Jianhong Yin <yin-jianhong@163.com> - 2.2.3-1
+- Updated to release 2.2.3.
+- Fix build error.
+
 * Sat Apr 11 2015 Jeff Lawson <jeff@bovine.net> - 2.2.2-1
 - Updated to release 2.2.2.
 
